@@ -1,13 +1,3 @@
-// var emptyHeight = document.getElementById("height").value;
-// var emptyChar = document.getElementById("character");
-
-// function enter () {
-//   if(!emptyHeight.match(/\S/) && !emptyChar.match(/\S/)) {
-//     document.getElementById("grow").addEventListener("click", growTree);
-//   } else {
-//     alert("Both the height and character fields must have a value")
-//   }
-// }
 
 function growTree() {
   var height = Number(document.getElementById("height").value);
@@ -18,5 +8,7 @@ function growTree() {
     console.log(space.repeat(height-oneLess)+character.repeat(2*i+1));
   }
 }
-
-growTree();
+document.getElementById("grow").addEventListener("click", function(event) {
+  event.preventDefault();
+  growTree();
+});
