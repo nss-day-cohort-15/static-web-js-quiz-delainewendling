@@ -23,6 +23,7 @@ document.getElementById("grow").addEventListener("click", function(event) {
   character.value = "";
 });
 
+// Event Listener for Return Key
 var theParent = document.getElementById("formContainer");
 theParent.addEventListener("keypress", submitForm, false);
 
