@@ -2,6 +2,7 @@ var tree = {};
 var height = document.getElementById("height");
 var character = document.getElementById("character");
 
+//Function for grow tree
 function growTree(object) {
   for(i=0; i<tree.treeHeight; i++) {
     var space=" ";
@@ -11,7 +12,6 @@ function growTree(object) {
 
 document.getElementById("grow").addEventListener("click", function(event) {
   event.preventDefault();
-  console.log(height.value);
   if (height.value !== "" && character.value !== "") {
     tree.treeHeight = Number(height.value);
     tree.treeChar = character.value;
