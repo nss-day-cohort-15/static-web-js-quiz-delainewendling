@@ -1,0 +1,156 @@
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Nav Bar */
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 5%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover:nth-child(n+2)  {
+  color: #BD5F20;
+}
+
+.selected a {
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+/* Title and webpage intro */
+#title {
+  text-align: center;
+  font-family: 'Galada', cursive;
+  font-size: 3em;
+  color: #902D7D;
+  margin: 0;
+}
+
+.about p {
+  padding: 15px;
+}
+
+/* Card */
+.card {
+  display: inline-block;
+  width: 30%;
+  margin: 1.4% 1.4%;
+  border: solid lightblue 1px;
+}
+
+.productName {
+  border: dotted lightgrey 1px;
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 15px;
+  height: 90px;
+}
+
+/* Image */
+.productImg {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  max-width: 100%;
+}
+
+/* Description */
+.description {
+  text-align: justify;
+  padding: 5%;
+  font-size: .9em;
+  height: 220px;
+}
+
+/* Availability Styling */
+.availability {
+  color: yellow;
+  background-color: #888;
+}
+
+.availability p {
+  padding: 3px;
+}
+
+/* Specifications and Pricing */
+.specifications {
+  margin: 15px 0 0 15px;
+  font-size: 1.25em;
+}
+
+.pricing {
+  margin: 0 0 0 15px;
+  font-size: 1.25em;
+}
+
+.size,
+.weight,
+.quantityPricing {
+  margin: 0 0 0 40px;
+  font-weight: bolder;
+  font-size: .9em;
+}
+
+.quantityPricing:nth-of-type(3) {
+  margin-bottom: 15px;
+}
+
+.specs {
+  font-size: .6em;
+  margin: 4px 0 0 0;
+}
+
+@media (max-width: 915px) {
+  .productName {
+    height: 110px;
+  }
+  .description {
+    height: 300px;
+  }
+}
+
+@media (max-width: 760px) {
+  .productName {
+    height: 110px;
+  }
+  .description {
+    height: 250px;
+  }
+  .card {
+    width: 45%;
+    margin: 1.4% 1.4%;
+  }
+}
+
+@media (max-width: 580px) {
+  .productName {
+    height: 110px;
+  }
+  .description {
+    height: 210px;
+  }
+  .card {
+    width: 85%;
+    margin: 1.4% 7.4%;
+  }
+  nav li {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+  }
+
+}
